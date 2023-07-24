@@ -10,8 +10,6 @@ void moveHare(char *const, const int, int *const);
 void animal_mover(const string, char * const, char *const);
 void track_printer(char const *const, const int);
 
-// documentation
-
 int main(int argc, const char *argv[]) {
     
     const int array_size = 70;
