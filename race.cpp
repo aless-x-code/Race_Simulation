@@ -65,7 +65,7 @@ int main(int argc, const char *argv[]) {
         
         track_printer(&track[0], array_size); // print array
         
-        if (erase_ouch) // if ouch text was printed, delete it from array
+        if (erase_ouch) // if ouch text was printed, override/replace it with underscore tiles
             memset(track, '_', hare_current_tile + 7);
     
     }
