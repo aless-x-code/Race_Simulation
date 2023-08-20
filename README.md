@@ -1,7 +1,7 @@
 # Race_Simulation
 **Summary** <br>
 This program simulates the classic race of the Tortoise and the Hare. 
-The race track is represented by a 70 tile long track, where both animals begging at index 0. Every 1 second, a random movement patter is chosen for the tortoise and the hare, and their index is adjusted forward, backward, or no movement (Keep in mind, the tortoise will have more, but shorter movements, and the hare will have more inconsistent, but aggressive movements). First animal to reach the last tile wins.
+The race track is represented by a 70 tile long track, where both animals begging at index 0. Every 1 second, a random movement patter is chosen for the tortoise and the hare, and their index is adjusted forward, backward, or no movement (Keep in mind, the tortoise will have more consistent, but shorter movements, and the hare will have more inconsistent, but aggressive movements). First animal to reach the last tile wins.
 **Example output**
 
 
