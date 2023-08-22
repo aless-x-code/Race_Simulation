@@ -1,7 +1,7 @@
 # Race_Simulation
 **Summary** <br>
 This program simulates the classic race of the Tortoise and the Hare. 
-The race track is represented by a 70 tile long track, where both animals begging at index 0. Every 1 second, a random movement patter is chosen for the tortoise and the hare, and their index is adjusted forward, backward, or no movement (Keep in mind, the tortoise will have more consistent, but shorter movements, and the hare will have more inconsistent, but aggressive movements). First animal to reach the last tile wins.
+The race track is represented by a 70 tile long track, where both animals beging at index 0. Every 1 second, a random movement patter is chosen for the tortoise and the hare, and their index is adjusted forward, backward, or no movement (Keep in mind, the tortoise will have more consistent, but shorter movements, and the hare will have more inconsistent, but aggressive movements). First animal to reach the last tile wins.
 **Example output**
 ________T_______________H______________________
 ____________________T_______H__________________
@@ -20,10 +20,10 @@ For loop will return 0 when an animal reaches index 69.
 
 **moveTortoise and moveHare**
 Functions receives the track, the random number generated, and the animal's current index.
-First, we initilize the variable next_tile as the animal's current tile, so we have a base to add or subtract from. 
-Each animal has a pre-set number of movements, each with a different probability. The probability is represented by the amount of number from 1-10. For example, the tortoise has a 50% chance to move forward 3 tiles if random number is 1-5, a 30% chance to move forward 1 tile is random number is 6-8, and a 20% chance to move backward 6 tiles if random number is 9-10.
-Once we determine what will the next tile be, we check for out-of-range indeces errors (lower than 0, or higher than 69), and adjust accordingly. 
-With the new index, boths functions call animal_mover(handing it the animal's current tile, and the next_tile), which will swap the animals old index with the new one. 
+First, we initilize the variable next_tile as the animal's current tile, so we have a base index to add or subtract from. 
+Each animal has a pre-set number of movements, each with a different probability. The probability is represented by the amount of numbers from 1-10. For example, the tortoise has a 50% chance to move forward 3 tiles if random number is 1-5, a 30% chance to move forward 1 tile if random number is 6-8, and a 20% chance to move backward 6 tiles if random number is 9-10.
+Once we determine what the next tile will be, we check for out-of-range indeces errors (lower than 0, or higher than 69), and adjust to 0 or 69. 
+With the new index, boths functions call animal_mover (handing it the animal's current tile, and the next_tile), which will swap the animals old index with the new one. 
 Finally, the animal's current tile is updated with the newly established tile. This is done after calling animal_mover since we have to hand animal_mover the old index, before it is overrided. 
 
 **animal_mover**
