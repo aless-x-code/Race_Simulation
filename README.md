@@ -2,13 +2,13 @@
 **Summary** <br>
 This program simulates the classic race of the Tortoise and the Hare. 
 The race track is represented by a 70 tile long track, where both animals beging at index 0. Every 1 second, a random movement patter is chosen for the tortoise and the hare, and their index is adjusted forward, backward, or no movement (Keep in mind, the tortoise will have more consistent, but shorter movements, and the hare will have more inconsistent, but aggressive movements). First animal to reach the last tile wins.
-**Example output**
-________T_______________H______________________
-____________________T_______H__________________
-_______________H___T___________________________
-_____________________T_____H___________________
-________________________T___________H__________
-______________________________T________H_______
+**Example output** <br>
+________T_______________H______________________ <br>
+____________________T_______H__________________ <br>
+_______________H___T___________________________ <br>
+_____________________T_____H___________________ <br>
+________________________T___________H__________ <br>
+______________________________T________H_______ <br>
 
 _Moving forward, I describe each function individually <br>
 **main function** <br>
