@@ -77,7 +77,8 @@ int main(int argc, const char *argv[]) {
 void moveTortoise(char *const trackPtr, const int movement_dictator, int *const tortoise_current_tile) // receive: race track array, random number dictating movement, and tortoise's current tile
 {
     int next_tile = *tortoise_current_tile; // initialize next tile to the current tile
-    
+
+    // the tortoise has a 50% chance to move forward 3 tiles if random number is 1-5, a 30% chance to move forward 1 tile if random number is 6-8, and a 20% chance to move backward 6 tiles if random number is 9-10
     if (movement_dictator <= 5)
         next_tile += 3;
     else if (movement_dictator <= 8)
@@ -128,7 +129,7 @@ void moveHare(char *const trackPtr, const int movement_dictator, int *const hare
 // swaps animal's previous position with the next
 void animal_mover(const string animal, char *const tile1, char *const tile2) // receive: animal's name, last position, and new position
 {
-    if (animal == "hare" && *tile1 == 'T') // It prevents an override when toirtoise's next move was hare's previos position
+    if (animal == "hare" && *tile1 == 'T') // It prevents an override when toirtoise's next move was hare's previos position, see documentation (readme file) for details
         *tile1 = 'T';
     else
         *tile1 = '_'; // this else condition will execute in the vast majority of cases
