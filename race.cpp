@@ -129,7 +129,7 @@ void moveHare(char *const trackPtr, const int movement_dictator, int *const hare
 // swaps animal's previous position with the next
 void animal_mover(const string animal, char *const tile1, char *const tile2) // receive: animal's name, last position, and new position
 {
-    if (animal == "hare" && *tile1 == 'T') // It prevents an override when toirtoise's next move was hare's previos position, see documentation (readme file) for details
+    if (animal == "hare" && *tile1 == 'T') // It prevents an override when toirtoise's next move was hare's previos position, see documentation ("animal_mover first condition details" file) for explanation
         *tile1 = 'T';
     else
         *tile1 = '_'; // this else condition will execute in the vast majority of cases
